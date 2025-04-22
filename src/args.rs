@@ -32,6 +32,7 @@ pub struct Args {
     /// Mode, possible values: "tcp", "udp".
     pub mode: String,
     #[arg(short, long, default_value_t = 1)]
+    /// The number of threads, specifically, tokio threads (coroutines).
     pub thread_num: usize,
 }
 
